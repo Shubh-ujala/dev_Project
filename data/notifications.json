@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "user_id": 2,
+        "message": "Your grievance #1 has been submitted.",
+        "created_at": "2025-04-14 18:11:17",
+        "read": false
+    },
+    {
+        "id": 2,
+        "user_id": 2,
+        "message": "Your grievance #2 has been submitted.",
+        "created_at": "2025-04-14 18:14:30",
+        "read": false
+    },
+    {
+        "id": 3,
+        "user_id": 2,
+        "message": "Your grievance #1 has been resolved.",
+        "created_at": "2025-04-14 18:15:15",
+        "read": false
+    },
+    {
+        "id": 4,
+        "user_id": 2,
+        "message": "Your grievance #2 has been resolved.",
+        "created_at": "2025-04-14 18:15:46",
+        "read": false
+    }
+]

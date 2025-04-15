@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "full_name": "admin",
+        "email": "admin@email.com",
+        "phone": "12345678",
+        "password": "$2y$10$Yy82uzM86c4gLOn4jljFKuV5BsyzerEXRyYTSsefWBbW4kE8Cqpt6",
+        "is_admin": true,
+        "created_at": "2025-04-14 18:08:49"
+    },
+    {
+        "id": 2,
+        "full_name": "user11",
+        "email": "user@example.com",
+        "phone": "12346576888888",
+        "password": "$2y$10$tqVzoDHgFTVkd9hmS4r.AO5Sk7yWazniB2JzlfOKRBC2HzCgOG.dy",
+        "is_admin": false,
+        "created_at": "2025-04-14 18:09:28"
+    }
+]

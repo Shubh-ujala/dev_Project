@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "id": 1,
+        "user_id": 2,
+        "category": "Billing",
+        "description": "aresrytuyiu",
+        "status": "resolved",
+        "file_path": "",
+        "submitted_at": "2025-04-20 14:39:53",
+        "anonymous": false,
+        "escalated": true,
+        "escalation_date": "2025-04-20 14:47:54",
+        "resolved_at": "2025-04-20 14:48:16"
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "category": "Traffic",
+        "description": "QWAESFRGDHTFJ",
+        "status": "resolved",
+        "file_path": "",
+        "submitted_at": "2025-04-20 16:01:33",
+        "anonymous": false,
+        "resolved_at": "2025-04-20 16:01:36"
+    }
+]

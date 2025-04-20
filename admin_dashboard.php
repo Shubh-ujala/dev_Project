@@ -53,20 +53,20 @@ $escalated_grievances = count(array_filter($grievances, function($g) {
         <h1 class="text-4xl font-extrabold mb-8 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'text-white' : 'text-primary'; ?>">Admin Dashboard</h1>
         
         <!-- Analytics -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-            <div class="p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
+            <div class="flex flex-wrap gap-6 mb-8">
+            <div class="flex-1 min-w-[220px] p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
                 <h2 class="text-xl font-bold">Total Grievances</h2>
                 <p class="text-3xl"><?php echo $total_grievances; ?></p>
             </div>
-            <div class="p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
+            <div class="flex-1 min-w-[220px] p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
                 <h2 class="text-xl font-bold">Pending</h2>
                 <p class="text-3xl"><?php echo $pending_grievances; ?></p>
             </div>
-            <div class="p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
+            <div class="flex-1 min-w-[220px] p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
                 <h2 class="text-xl font-bold">Resolved</h2>
                 <p class="text-3xl"><?php echo $resolved_grievances; ?></p>
             </div>
-            <div class="p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
+            <div class="flex-1 min-w-[220px] p-6 rounded-xl shadow-lg <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-700'; ?>">
                 <h2 class="text-xl font-bold">Escalated</h2>
                 <p class="text-3xl"><?php echo $escalated_grievances; ?></p>
             </div>

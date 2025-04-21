@@ -5,15 +5,25 @@
     </div>
     <nav>
         <ul class="space-y-4">
-            <li><a href="index.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Dashboard</a></li>
-            <li><a href="grievance.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Submit Grievance</a></li>
-            <li><a href="profile.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Profile</a></li>
-            <li><a href="history.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">History</a></li>
-            <li><a href="faq.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">FAQ</a></li>
-            <li><a href="public_board.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Public Board</a></li>
+            <li>
+                <a href="index.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Dashboard</a>
+            </li>
+            <li>
+                <a href="grievance.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Submit Grievance</a>
+            </li>
+            <li>
+                <a href="profile.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Profile</a>
+            </li>
+            <li>
+                <a href="history.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">History</a>
+            </li>
+            <li>
+                <a href="faq.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">FAQ</a>
+            </li>
+            <li>
+                <a href="public_board.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-gray-700 hover:text-white' : 'hover:bg-white hover:text-primary'; ?>">Public Board</a>
+            </li>
 
-
-            <!-- ensure that the logged_user is admin if the logged-user is admin then only the he/she will be able to see the Admin Dashboard -->
              
             <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']) { ?>
                 <li>
@@ -37,9 +47,7 @@
         sidebar.classList.toggle('w-16');
         sidebar.classList.toggle('w-64');
     }
-    function changeLanguage(lang) {
-        alert('Language switched to: ' + lang);
-    }
+   
     function toggleTheme() {
         fetch('toggle_theme.php', { method: 'POST' })
             .then(() => {

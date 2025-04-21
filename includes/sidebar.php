@@ -14,6 +14,7 @@
 
 
             <!-- ensure that the logged_user is admin if the logged-user is admin then only the he/she will be able to see the Admin Dashboard -->
+             
             <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']) { ?>
                 <li>
                     <a href="admin_dashboard.php" class="block py-2 px-4 rounded-lg transition duration-300 <?php echo isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark' ? 'hover:bg-green-500 hover:text-white' : 'hover:bg-green-500 hover:text-white'; ?>">Admin Dashboard</a>
